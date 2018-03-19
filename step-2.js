@@ -6,7 +6,7 @@ function getAndPrintHTML() {
   var dataChunks = "";
 
   var requestOptions = {
-    host: 'syntantris.github.io',
+    host: 'sytantris.github.io',
     path: '/http-examples/step2.html'
   };
 
@@ -16,7 +16,6 @@ function getAndPrintHTML() {
 
     response.on('data', function(data) {
         dataChunks += data;
-      //console.log('Chunk Received. Length: ' + dataChunk.length);
     });
 
     response.on('end', function() {
